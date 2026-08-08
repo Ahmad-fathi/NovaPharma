@@ -125,7 +125,7 @@ const PRODUCTS = [
     brand: 'cobas®',
     model: 'pro integrated solutions',
     title: 'cobas® pro integrated solutions',
-    imageUrl: '../assets/images/cobas_pro_analyzer_1786056031099.jpg'
+    imageUrl: '/../assets/images/cobas_pro_analyzer_1786056031099.jpg'
   },
   {
     id: 'cobas-pure',
@@ -133,7 +133,7 @@ const PRODUCTS = [
     brand: 'cobas®',
     model: 'pure integrated solutions',
     title: 'cobas® pure integrated solutions',
-    imageUrl: '../assets/images/cobas_pure_analyzer_1786056044674.jpg'
+    imageUrl: '/../assets/images/cobas_pure_analyzer_1786056044674.jpg'
   }
 ];
 
