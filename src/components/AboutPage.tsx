@@ -63,7 +63,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
             <div className="lg:col-span-5 relative h-full flex items-center justify-end">
               <div className="relative w-full h-[220px] sm:h-[280px] lg:h-[320px] rounded-[22px] sm:rounded-[28px] overflow-hidden shadow-lg border border-white/70">
                 <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80"
+                  src="../assets/images/ChatGPT Image Aug 5, 2026, 03_41_02 AM.png"
                   alt="Nova Lab Headquarters Building"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -126,7 +126,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
               className="group relative h-[400px] sm:h-[460px] lg:h-[500px] rounded-[24px] overflow-hidden shadow-md border border-white/60 flex flex-col justify-between cursor-pointer hover:shadow-2xl transition-all duration-300"
             >
               <img
-                src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80"
+                src="../assets/images/pexels-artempodrez-8532824.jpg"
                 alt="Laboratories"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -186,7 +186,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
               className="group relative h-[400px] sm:h-[460px] lg:h-[500px] rounded-[24px] overflow-hidden shadow-md border border-white/60 flex flex-col justify-between cursor-pointer hover:shadow-2xl transition-all duration-300"
             >
               <img
-                src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=800&q=80"
+                src="../assets/images/pexels-mart-production-7231210.jpg"
                 alt="Pharma"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -239,7 +239,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
             <div className="lg:col-span-5">
               <div className="w-full h-[280px] sm:h-[340px] lg:h-[380px] rounded-[22px] overflow-hidden shadow-sm border border-gray-100 relative">
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                  src="src/assets/images/pexels-artempodrez-8532864.jpg"
                   alt="Biofarma convention team"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -418,7 +418,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
             {/* Left Photo Card */}
             <div className="w-full h-[320px] sm:h-[380px] lg:h-[420px] rounded-[24px] sm:rounded-[28px] overflow-hidden shadow-md border border-gray-100/80 relative">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+                src="../assets/images/pexels-artempodrez-8532864.jpg"
                 alt="Healthcare team collaboration"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center"
