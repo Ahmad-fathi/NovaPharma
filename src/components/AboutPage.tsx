@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { FeatureCards } from './FeatureCards';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import aboutHeroImg from '../assets/images/ChatGPT Image Aug 5, 2026, 03_41_02 AM.png';
+import labCardImg from '../assets/images/pexels-artempodrez-8532824.jpg';
+import pharmaCardImg from '../assets/images/pexels-mart-production-7231210.jpg';
+import timelineImg from '../assets/images/pexels-artempodrez-8532864.jpg';
 
 interface AboutPageProps {
   onNavigateSection?: (sectionId: string) => void;
@@ -63,7 +67,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
             <div className="lg:col-span-5 relative h-full flex items-center justify-end">
               <div className="relative w-full h-[220px] sm:h-[280px] lg:h-[320px] rounded-[22px] sm:rounded-[28px] overflow-hidden shadow-lg border border-white/70">
                 <img
-                  src="../assets/images/ChatGPT Image Aug 5, 2026, 03_41_02 AM.png"
+                  src={aboutHeroImg}
                   alt="Nova Lab Headquarters Building"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -126,7 +130,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
               className="group relative h-[400px] sm:h-[460px] lg:h-[500px] rounded-[24px] overflow-hidden shadow-md border border-white/60 flex flex-col justify-between cursor-pointer hover:shadow-2xl transition-all duration-300"
             >
               <img
-                src="../assets/images/pexels-artempodrez-8532824.jpg"
+                src={labCardImg}
                 alt="Laboratories"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -186,7 +190,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
               className="group relative h-[400px] sm:h-[460px] lg:h-[500px] rounded-[24px] overflow-hidden shadow-md border border-white/60 flex flex-col justify-between cursor-pointer hover:shadow-2xl transition-all duration-300"
             >
               <img
-                src="../assets/images/pexels-mart-production-7231210.jpg"
+                src={pharmaCardImg}
                 alt="Pharma"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -239,7 +243,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
             <div className="lg:col-span-5">
               <div className="w-full h-[280px] sm:h-[340px] lg:h-[380px] rounded-[22px] overflow-hidden shadow-sm border border-gray-100 relative">
                 <img
-                  src="src/assets/images/pexels-artempodrez-8532864.jpg"
+                  src={timelineImg}
                   alt="Biofarma convention team"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -418,7 +422,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
             {/* Left Photo Card */}
             <div className="w-full h-[320px] sm:h-[380px] lg:h-[420px] rounded-[24px] sm:rounded-[28px] overflow-hidden shadow-md border border-gray-100/80 relative">
               <img
-                src="../assets/images/pexels-artempodrez-8532864.jpg"
+                src={timelineImg}
                 alt="Healthcare team collaboration"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center"
