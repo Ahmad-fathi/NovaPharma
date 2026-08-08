@@ -244,7 +244,7 @@ export const LaboratoriesPage: React.FC<LaboratoriesPageProps> = ({
               whileHover={{ y: -5 }}
               transition={{ duration: 0.25 }}
               className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 md:p-10 border border-[#d6e0f8] shadow-[0_4px_20px_rgba(0,0,0,0.015)] flex flex-col justify-between h-[380px] sm:h-[420px] lg:h-[450px] group cursor-pointer hover:shadow-lg hover:border-[#a8c2f5] transition-all duration-300 relative overflow-hidden"
-              onClick={onOpenContact}
+              
             >
               {/* IVD Badge Top Left */}
               <div className="inline-block self-start">
