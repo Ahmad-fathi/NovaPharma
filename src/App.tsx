@@ -75,6 +75,16 @@ export default function App() {
     }
   };
 
+  const openContact = () => {
+    setCurrentPage('contact');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const openAbout = () => {
+    setCurrentPage('about');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-[#f7f8f6] text-[#1a3d3d] flex flex-col selection:bg-[#e0357a] selection:text-white font-['Poppins',sans-serif]">
       
@@ -92,10 +102,7 @@ export default function App() {
         ) : currentPage === 'laboratories' ? (
           <LaboratoriesPage
             onNavigatePage={setCurrentPage}
-            onOpenContact={() => {
-              setCurrentPage('contact');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
+            onOpenContact={openContact}
           />
         ) : currentPage === 'contact' ? (
           <ContactPage
@@ -105,40 +112,31 @@ export default function App() {
         ) : (
           <>
             {/* Hero Section */}
-            <Hero onOpenContact={() => {
-              setCurrentPage('contact');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }} />
+            <Hero onOpenContact={openContact} />
 
             {/* Display Feature Cards Carousel */}
             <FeatureCards />
 
             {/* Specialization Section */}
             <SpecializationSection
-              onOpenContact={() => {
-                setCurrentPage('contact');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
+              onOpenContact={openContact}
               onNavigatePage={setCurrentPage}
             />
 
             {/* Brands We Represent Section */}
-            <BrandsSection />
+            <BrandsSection onOpenContact={openContact} />
 
             {/* Story / Statement Section */}
-            <StoryStatementSection />
+            <StoryStatementSection onOpenContact={openContact} />
 
             {/* Medical Coverage Regional Map Section */}
-            <CoverageMapSection />
+            <CoverageMapSection onOpenContact={openContact} onNavigateAbout={openAbout} />
 
             {/* FAQ & Information Section */}
-            <FaqSection />
+            <FaqSection onOpenContact={openContact} />
 
             {/* Lab Photo & Statement Block Section */}
-            <LabStatementSection onOpenContact={() => {
-              setCurrentPage('contact');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }} />
+            <LabStatementSection onOpenContact={openContact} />
 
             {/* Video Testimonials Specialists Grid Section */}
             <VideoTestimonialsSection />
@@ -150,7 +148,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer onNavigatePage={setCurrentPage} />
+      <Footer onNavigatePage={setCurrentPage} onOpenContact={openContact} />
     </div>
   );
 }
