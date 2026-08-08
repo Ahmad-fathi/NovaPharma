@@ -3,6 +3,9 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown, ArrowRight, Sparkles, Layers, ShieldCheck, Microscope, Plus, Minus } from 'lucide-react';
 import { BrandsSection } from './BrandsSection';
 import { LabStatementSection } from './LabStatementSection';
+import cobasProImg from '../assets/images/cobas_pro_analyzer_1786056031099.jpg';
+import cobasPureImg from '../assets/images/cobas_pure_analyzer_1786056044674.jpg';
+import heroImg from '../assets/images/pexels-artempodrez-8532824.jpg';
 
 interface LaboratoriesPageProps {
   onNavigatePage: (page: 'home' | 'about' | 'laboratories' | 'medical-devices' | 'pharma') => void;
@@ -125,7 +128,7 @@ const PRODUCTS = [
     brand: 'cobas®',
     model: 'pro integrated solutions',
     title: 'cobas® pro integrated solutions',
-    imageUrl: '/../assets/images/cobas_pro_analyzer_1786056031099.jpg'
+    imageUrl: cobasProImg
   },
   {
     id: 'cobas-pure',
@@ -133,7 +136,7 @@ const PRODUCTS = [
     brand: 'cobas®',
     model: 'pure integrated solutions',
     title: 'cobas® pure integrated solutions',
-    imageUrl: '/../assets/images/cobas_pure_analyzer_1786056044674.jpg'
+    imageUrl: cobasPureImg
   }
 ];
 
@@ -206,7 +209,7 @@ export const LaboratoriesPage: React.FC<LaboratoriesPageProps> = ({
             <div className="lg:col-span-5 h-[280px] sm:h-[360px] lg:h-[420px] relative flex items-center justify-end">
               <div className="relative w-full h-full rounded-2xl overflow-hidden">
                 <img
-                  src="../assets/images/pexels-artempodrez-8532824.jpg"
+                  src={heroImg}
                   alt="Laboratory In Vitro Diagnostics Specialist"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-center sm:object-right"
