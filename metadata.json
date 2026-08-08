@@ -1,0 +1,6 @@
+{
+  "name": "Nova Lab",
+  "description": "A modern, professional hero section for a medical diagnostics laboratory website featuring floating top navigation, precision copy, CTA button with signature accent bullet, and floating feature cards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
