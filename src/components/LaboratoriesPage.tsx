@@ -125,7 +125,7 @@ const PRODUCTS = [
     brand: 'cobas®',
     model: 'pro integrated solutions',
     title: 'cobas® pro integrated solutions',
-    imageUrl: '/src/assets/images/cobas_pro_analyzer_1786056031099.jpg'
+    imageUrl: '../assets/images/cobas_pro_analyzer_1786056031099.jpg'
   },
   {
     id: 'cobas-pure',
@@ -133,7 +133,7 @@ const PRODUCTS = [
     brand: 'cobas®',
     model: 'pure integrated solutions',
     title: 'cobas® pure integrated solutions',
-    imageUrl: '/src/assets/images/cobas_pure_analyzer_1786056044674.jpg'
+    imageUrl: '../assets/images/cobas_pure_analyzer_1786056044674.jpg'
   }
 ];
 
@@ -174,7 +174,7 @@ export const LaboratoriesPage: React.FC<LaboratoriesPageProps> = ({
   return (
     <div className="w-full bg-[#f7f8f6] text-[#1a3d3d] pt-20 sm:pt-24 pb-16 space-y-8 sm:space-y-12 lg:space-y-16 font-['Poppins',sans-serif]">
       
-      {/* 1. HERO SECTION FOR LABORATORIES - EXACTLY MATCHING REFERENCE SCREENSHOT */}
+      {/* 1. HERO SECTION FOR LABORATORIES PAGE */}
       <section className="max-w-[1360px] mx-auto px-3 sm:px-6 lg:px-8 pt-2">
         <div className="relative w-full rounded-[28px] sm:rounded-[34px] overflow-hidden bg-gradient-to-r from-[#fae6ee] via-[#f1f4f8] to-[#e5eef6] border border-white/90 shadow-[0_10px_35px_rgba(0,0,0,0.02)] min-h-[380px] sm:min-h-[420px] lg:min-h-[460px] flex items-stretch">
           
@@ -206,7 +206,7 @@ export const LaboratoriesPage: React.FC<LaboratoriesPageProps> = ({
             <div className="lg:col-span-5 h-[280px] sm:h-[360px] lg:h-[420px] relative flex items-center justify-end">
               <div className="relative w-full h-full rounded-2xl overflow-hidden">
                 <img
-                  src="/src/assets/images/pexels-artempodrez-8532824.jpg"
+                  src="../assets/images/pexels-artempodrez-8532824.jpg"
                   alt="Laboratory In Vitro Diagnostics Specialist"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-center sm:object-right"
