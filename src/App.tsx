@@ -98,7 +98,7 @@ export default function App() {
       {/* Main Container */}
       <main className="flex-grow flex flex-col justify-between">
         {currentPage === 'about' ? (
-          <AboutPage onNavigateSection={handleNavigateSection} />
+          <AboutPage onNavigateSection={handleNavigateSection} onOpenContact={openContact} />
         ) : currentPage === 'laboratories' ? (
           <LaboratoriesPage
             onNavigatePage={setCurrentPage}

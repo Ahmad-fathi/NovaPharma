@@ -147,7 +147,7 @@ export const CoverageMapSection: React.FC<CoverageMapSectionProps> = ({
             {/* Pill CTA Button */}
             <div className="pt-2">
               <button
-                onClick={onOpenContact || onNavigateAbout}
+                onClick={onNavigateAbout || onOpenContact}
                 className="inline-flex items-center justify-between gap-6 px-8 py-3.5 rounded-full bg-white text-[#1a3d3d] font-semibold text-sm sm:text-base font-['Poppins'] shadow-[0_8px_30px_rgba(26,61,61,0.08)] border border-slate-100/90 hover:shadow-[0_12px_36px_rgba(224,53,122,0.18)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer group"
               >
                 <span>About Us</span>

@@ -9,6 +9,7 @@ import timelineImg from '../assets/images/pexels-artempodrez-8532864.jpg';
 
 interface AboutPageProps {
   onNavigateSection?: (sectionId: string) => void;
+  onOpenContact?: () => void;
 }
 
 const actionKeys = [
@@ -26,7 +27,7 @@ const actionKeys = [
   },
 ];
 
-export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
+export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection, onOpenContact }) => {
   const [currentActionKeyIndex, setCurrentActionKeyIndex] = useState(0);
   const [direction, setDirection] = useState(1);
 
@@ -454,8 +455,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigateSection }) => {
               <div className="relative z-10 pb-2">
                 <button
                   onClick={() => {
-                    if (onNavigateSection) {
-                      onNavigateSection('brands-section');
+                    if (onOpenContact) {
+                      onOpenContact();
                     }
                   }}
                   className="bg-white text-[#0b3334] hover:bg-slate-50 px-8 py-3.5 sm:px-9 sm:py-4 rounded-full font-normal text-base sm:text-lg shadow-sm inline-flex items-center gap-3 transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer border border-white/60"
